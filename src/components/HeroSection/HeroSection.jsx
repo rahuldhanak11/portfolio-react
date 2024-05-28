@@ -70,6 +70,30 @@ const SkillsContainer = styled.div`
   scrollbar-width: thin;
   scrollbar-color: crimson transparent;
   scrollbar-track-color: transparent;
+  &::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: crimson; /* Set the color of the thumb */
+    border-radius: 10px; /* Roundness of the thumb */
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #a80202; /* Change color on hover */
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: transparent; /* Set the color of the track */
+  }
+
+  /* Corner */
+  &::-webkit-scrollbar-corner {
+    background: transparent; /* Remove the corner */
+  }
   @media screen and (max-width: 768px) {
   overflow-x: auto;
   scrollbar-width: thin;
@@ -87,6 +111,31 @@ const ToolsContainer = styled.div`
   justify-content: center;
   margin-top: 20px;
   padding-bottom: 20px;
+
+  &::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: crimson; /* Set the color of the thumb */
+    border-radius: 10px; /* Roundness of the thumb */
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #a80202; /* Change color on hover */
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: transparent; /* Set the color of the track */
+  }
+
+  /* Corner */
+  &::-webkit-scrollbar-corner {
+    background: transparent; /* Remove the corner */
+  }
   @media screen and (max-width: 960px) {
   overflow-x: auto;
   scrollbar-width: thin;
