@@ -87,8 +87,8 @@ const ToolsContainer = styled.div`
   justify-content: center;
   margin-top: 20px;
   padding-bottom: 20px;
-  @media screen and (max-width: 768px) {
-    overflow-x: auto;
+  @media screen and (max-width: 960px) {
+  overflow-x: auto;
   scrollbar-width: thin;
   scrollbar-color: crimson transparent; 
   
@@ -109,7 +109,7 @@ const ToolCard = styled.div`
   border: 0.5px solid #413F4B;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     width: 60px; 
     height: 60px;
     margin-top: 10px;
