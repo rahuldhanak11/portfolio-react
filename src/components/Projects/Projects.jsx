@@ -39,16 +39,6 @@ import { useState } from 'react';
     }
   `;
 
-  const FloatingNav = styled.div`
-  width: 922px;
-  transform: translateX(50%);
-  margin-top: 30px;
-
-  @media screen and (max-width: 960px){
-    width: 100%;
-    transform: translateX(0);
-  }
-`
   
 const Nav = styled.div`
   height: 60px;
