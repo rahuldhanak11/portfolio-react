@@ -118,7 +118,7 @@ function HeroSection() {
     HTML: '/skills/html-5-svgrepo-com.svg',
     CSS: '/skills/css-3-svgrepo-com.svg',
     JavaScript: '/skills/javascript-svgrepo-com.svg',
-    React: 'src/assets/react1.svg',
+    React: '/skills/react-svgrepo-com.svg',
     MySQL: '/skills/mysql-logo-svgrepo-com.svg',
   };
 
