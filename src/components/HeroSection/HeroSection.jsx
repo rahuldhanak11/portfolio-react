@@ -126,32 +126,31 @@ const ToolsContainer = styled.div`
   margin-top: 20px;
   padding-bottom: 20px; 
   overflow-x: auto;
-  scrollbar-width: thin;
-  scrollbar-color: crimson transparent;
-  scrollbar-track-color: transparent;
+  /* Firefox */
+  scrollbar-width: thin; /* Sets the thickness of the scrollbar */
+  scrollbar-color: crimson transparent; /* Sets the color of the thumb and track */
+
+  /* WebKit-based browsers (Chrome, Safari, Samsung Internet) */
   &::-webkit-scrollbar {
-    width: 4px; /* Set the width of the scrollbar */
+    width: 10px; /* Sets the width of the scrollbar */
+    height: 10px; /* Sets the height of the scrollbar */
   }
 
-  /* Handle */
   &::-webkit-scrollbar-thumb {
-    background-color: crimson; /* Set the color of the thumb */
-    border-radius: 10px; /* Roundness of the thumb */
+    background-color: crimson; /* Sets the color of the thumb */
+    border-radius: 10px; /* Rounds the corners of the thumb */
   }
 
-  /* Handle on hover */
   &::-webkit-scrollbar-thumb:hover {
-    background: #a80202; /* Change color on hover */
+    background: #a80202; /* Changes color on hover */
   }
 
-  /* Track */
   &::-webkit-scrollbar-track {
-    background: transparent; /* Set the color of the track */
+    background: transparent; /* Sets the color of the track */
   }
 
-  /* Corner */
   &::-webkit-scrollbar-corner {
-    background: transparent; /* Remove the corner */
+    background: transparent; /* Removes the corner */
   }
   @media screen and (max-width: 960px) {
     &::-webkit-scrollbar {
