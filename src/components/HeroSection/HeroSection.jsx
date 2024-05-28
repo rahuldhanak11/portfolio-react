@@ -5,8 +5,12 @@ const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 20px;
+  padding: 50px;
   border-radius: 11px;
+
+  @media screen and (max-width: 768px){
+    padding: 22px;
+  }
 `;
 const Title = styled.div`
   font-size: 24px;
@@ -98,7 +102,7 @@ const SkillsContainer = styled.div`
   &::-webkit-scrollbar-corner {
     background: transparent; /* Remove the corner */
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     &::-webkit-scrollbar {
     width: 4px; /* Set the width of the scrollbar */
   }
@@ -114,13 +118,13 @@ const SkillsContainer = styled.div`
 const ToolsContainer = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: nowrap;
   margin-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
+  padding-bottom: 20px; 
+  overflow-x: auto;
   scrollbar-width: thin;
   scrollbar-color: crimson transparent;
+  scrollbar-track-color: transparent;
   &::-webkit-scrollbar {
     width: 4px; /* Set the width of the scrollbar */
   }
@@ -145,19 +149,24 @@ const ToolsContainer = styled.div`
   &::-webkit-scrollbar-corner {
     background: transparent; /* Remove the corner */
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
+    &::-webkit-scrollbar {
+    width: 4px; /* Set the width of the scrollbar */
+  }
   overflow-x: auto;
   scrollbar-width: thin;
-  scrollbar-color: crimson transparent; 
+  scrollbar-color: crimson transparent;
   margin-left: 0px;
   margin-top: 10px;
-  } 
-`
+  }
+
+`;
 const ToolCard = styled.div`
   width: 100px; 
   height: 100px; 
   flex-shrink: 0;
   background-image: url(${props => props.imageUrl});
+  background-color: #232229;
   background-size: 65%;
   background-repeat: no-repeat;
   background-position: center;
@@ -173,13 +182,6 @@ const ToolCard = styled.div`
   }
 `;
 
-const SkillsContainerWrapper = styled.div`
-  overflow-x: auto;
-`;
-
-const ToolsContainerWrapper = styled.div`
-  overflow-x: auto;
-`;
 
 function HeroSection() {
   const skillImages = {
@@ -218,7 +220,7 @@ function HeroSection() {
         <Subtitle>
           MY SKILLS
         </Subtitle>
-        <SkillsContainerWrapper>
+       
           <SkillsContainer>
             <SkillCard imageUrl={skillImages.C}></SkillCard>
             <SkillCard imageUrl={skillImages.Python}></SkillCard>
@@ -229,11 +231,10 @@ function HeroSection() {
             <SkillCard imageUrl={skillImages.MySQL}></SkillCard>
             <SkillCard imageUrl={skillImages.Flutter}></SkillCard>
           </SkillsContainer>
-          </SkillsContainerWrapper>
+        
         <Subtitle>
           TOOLS I HAVE WORKED ON
         </Subtitle>
-        <div style={{ overflowX: 'auto' }}>
           <ToolsContainer>
             <ToolCard imageUrl={toolImages.Illustrator}></ToolCard>
             <ToolCard imageUrl={toolImages.Photoshop}></ToolCard>
@@ -242,7 +243,6 @@ function HeroSection() {
             <ToolCard imageUrl={toolImages.Autocad}></ToolCard>
             <ToolCard imageUrl={toolImages.Canva}></ToolCard>
           </ToolsContainer>
-        </div>
       </HeroContainer>
     </div>
   )
