@@ -71,7 +71,7 @@ const SkillsContainer = styled.div`
   scrollbar-color: crimson transparent;
   scrollbar-track-color: transparent;
   &::-webkit-scrollbar {
-    width: 10px; /* Set the width of the scrollbar */
+    width: 4px; /* Set the width of the scrollbar */
   }
 
   /* Handle */
@@ -113,7 +113,7 @@ const ToolsContainer = styled.div`
   padding-bottom: 20px;
 
   &::-webkit-scrollbar {
-    width: 10px; /* Set the width of the scrollbar */
+    width: 4px; /* Set the width of the scrollbar */
   }
 
   /* Handle */
