@@ -114,7 +114,7 @@ const ToolsContainer = styled.div`
   justify-content: center;
   margin-top: 20px;
   padding-bottom: 20px;
-
+  width: 100%;
   &::-webkit-scrollbar {
     width: 4px; /* Set the width of the scrollbar */
   }
