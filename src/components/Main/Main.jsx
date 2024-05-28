@@ -12,7 +12,7 @@ import styled from 'styled-components'
 
     @media screen and (max-width: 960px){
         top: 40px;
-        right: 163px;
+        transform: translateX(6%);
         position: relative;
         bottom: 0;
         width: 90%;
