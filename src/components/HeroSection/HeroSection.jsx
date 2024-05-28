@@ -196,6 +196,7 @@ function HeroSection() {
     JavaScript: '/skills/javascript-svgrepo-com.svg',
     React: '/skills/react-svgrepo-com.svg',
     MySQL: '/skills/mysql-logo-svgrepo-com.svg',
+    FireBase: '/skills/icons8-firebase.svg'
   };
 
   const toolImages = {
@@ -233,6 +234,7 @@ function HeroSection() {
             <SkillCard imageUrl={skillImages.React}></SkillCard>
             <SkillCard imageUrl={skillImages.MySQL}></SkillCard>
             <SkillCard imageUrl={skillImages.Flutter}></SkillCard>
+            <SkillCard imageUrl={skillImages.FireBase}></SkillCard>
           </SkillsContainer>
         
         <Subtitle>

@@ -99,7 +99,9 @@ const CustomDropdown = styled.select`
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
-
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
   &:focus {
     outline: none;
   }
