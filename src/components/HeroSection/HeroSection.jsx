@@ -9,7 +9,7 @@ const HeroContainer = styled.div`
   border-radius: 11px;
 
   @media screen and (max-width: 768px){
-    padding: 22px;
+    padding: 10px;
   }
 `;
 const Title = styled.div`
@@ -17,8 +17,7 @@ const Title = styled.div`
   font-weight: 600;
   color: crimson;
   @media screen and (max-width: 768px) {
-    display: flex;
-    justify-content: center;
+    margin: 20px 20px 0px 20px;
   }
 `;
 
@@ -43,6 +42,9 @@ const Line = styled.div`
   background-color: crimson;
   margin-top: 20px;
   margin-bottom: 20px;
+  @media screen and (max-width: 768px) {
+    margin: 20px;
+  }
 `;
 
 const SkillCard = styled.div`
