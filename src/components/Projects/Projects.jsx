@@ -11,12 +11,20 @@ import { useState } from 'react';
     position: relative;
     padding: 50px;
     border-radius: 11px;
+
+    @media screen and (max-width: 960px){
+      padding: 10px;
+    }
   `;
 
   const Title = styled.div`
     font-size: 24px;
     font-weight: 600;
     color: crimson;
+
+    @media screen and (max-width: 960px) {
+      margin: 20px 20px 0px 20px;
+    }
   `;
 
   const Line = styled.div`
@@ -26,6 +34,9 @@ import { useState } from 'react';
     background-color: crimson;
     margin-top: 20px;
     margin-bottom: 20px;
+    @media screen and (max-width: 960px) {
+      margin: 20px;
+    }
   `;
 
   const FloatingNav = styled.div`
@@ -77,23 +88,48 @@ const NavLink = styled.a`
   
 `;
 
-// function PortfolioNav ({setActivePage}) {
-//   <FloatingNav>
-//   <Nav>
-//     <NavContainer>
-//       <NavItems>
-//           <NavLink onClick={() => setActivePage('rickshare')}>RickShare</NavLink>
-//           <NavLink onClick={() => setActivePage('prodigy-infotech')}>Prodigy Infotech</NavLink>
-//           <NavLink onClick={() => setActivePage('graphic-design')}>Graphic Design</NavLink>
-//       </NavItems>
-//     </NavContainer>
-//   </Nav>
-//   </FloatingNav>
-// }
+const DropdownContainer = styled.div`
+  text-align: center;
+  display: none;
+  
+  @media screen and (max-width: 960px) {
+    display: block; 
+  }
+`;
+
+const CustomDropdown = styled.select`
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #413F4B;
+  border-radius: 5px;
+  background-color: #14131A;
+  color: #CCC7C7;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+`;
+
+const CustomOption = styled.option`
+  background-color: #14131A;
+  color: #CCC7C7;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%; 
+`;
 
 
   const Projects = () => {
     const [activePage, setActivePage] = useState('rickshare');
+
+    const handleDropdownChange = (event) => {
+      setActivePage(event.target.value);
+    };
 
   const renderPage = () => {
     switch (activePage) {
@@ -121,6 +157,13 @@ const NavLink = styled.a`
           <NavLink active={activePage === 'graphic-design'} onClick={() => setActivePage('graphic-design')}>Graphic Design</NavLink>
       </NavItems>
     </NavContainer>
+    <DropdownContainer>
+          <CustomDropdown value={activePage} onChange={handleDropdownChange}>
+            <CustomOption value='rickshare'>RickShare</CustomOption>
+            <CustomOption value='web-dev'>Web-Development</CustomOption>
+            <CustomOption value='graphic-design'>Graphic Design</CustomOption>
+          </CustomDropdown>
+        </DropdownContainer>
           {renderPage()}
           </ProjectContainer>
       </div>

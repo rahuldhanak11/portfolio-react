@@ -18,22 +18,28 @@ background-color: #0d0d11;
 width: 100%;;
 height: 100%;
 overflow-x: hidden;
+
 `;
 
 //navbar CSS
 const FloatingNav = styled.div`
-  width: 922px;
-  transform: translateX(50%);
+  transform: translateX(12%);
   margin-top: 30px;
-
+  display: flex;
+  justify-content: center;
+  z-index: 10;
   @media screen and (max-width: 960px){
-    width: 100%;
-    transform: translateX(0);
+    position: fixed;
+    bottom: 10px;
+    transform: translateX(3.5%);
+    
   }
 `
 
 const Nav = styled.div`
+  width: 922px;
   background-color: #14131A;
+  border: 1px solid #413F4B;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -42,12 +48,11 @@ const Nav = styled.div`
   top: 30px;
   z-index: 10;
   border-radius: 15px;
+  overflow-y: hidden;
   @media screen and (max-width: 960px){
-    transition: 0.8s all ease;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    border-radius: 0;
+    font-size: 14px;
+    width: 350px;
+    border-radius: 15px;
   }
 `;
 
@@ -66,10 +71,13 @@ const NavItems = styled.ul`
   align-items: center;
   justify-content: center;
   gap: 150px;
-  padding: 0 6px;
+  
   list-style: none;
   :hover {
     color: #DC143C;
+  }
+  @media screen and (max-width: 960px) {
+    gap: 27px; 
   }
 `;  
 

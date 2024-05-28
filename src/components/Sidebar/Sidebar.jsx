@@ -214,7 +214,7 @@ const Sidebar = () => {
         <a href='https://www.instagram.com/rahuldhanak11' target="_blank" rel="noopener noreferrer"><SmallIcon><InstagramIcon /></SmallIcon></a>
         <a href='https://github.com/rahuldhanak11' target='_blank' rel="noopener noreferrer"><SmallIcon><GithubIcon /></SmallIcon></a>
       </SmallIcons>
-      <MoreButton onClick={toggleSidebar}>{isOpen ? 'Less' : 'More'}</MoreButton>
+      <MoreButton onClick={toggleSidebar}>{isOpen ? 'Close' : 'Open for more'}</MoreButton>
     </Container>
   );
 };

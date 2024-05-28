@@ -17,15 +17,6 @@ const GridContainer = styled.div`
    
 `;
 
-const Description = styled.div`
-  margin-top: 6px;
-  height: 75px;
-  margin-left: 3px;
-  font-size: 15px;
-  color: #999;
-  line-height: 1.2;
-  overflow-y: hidden;
-`
 
 const Card = styled.div`
   width: 200px;
