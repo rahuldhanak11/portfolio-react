@@ -18,26 +18,29 @@ background-color: #0d0d11;
 width: 100%;;
 height: 100%;
 overflow-x: hidden;
-
+@media screen and (max-width: 960px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 `;
 
 //navbar CSS
 const FloatingNav = styled.div`
-  transform: translateX(12%);
+  width: 922px;
+  transform: translateX(50%);
   margin-top: 30px;
-  display: flex;
-  justify-content: center;
   z-index: 10;
   @media screen and (max-width: 960px){
     position: fixed;
     bottom: 10px;
-    transform: translateX(3.5%);
-    
+    width: 90%;
+    transform: translateX(6%);
   }
 `
 
 const Nav = styled.div`
-  width: 922px;
+  
   background-color: #14131A;
   border: 1px solid #413F4B;
   height: 60px;
@@ -50,8 +53,7 @@ const Nav = styled.div`
   border-radius: 15px;
   overflow-y: hidden;
   @media screen and (max-width: 960px){
-    font-size: 14px;
-    width: 350px;
+    font-size: 12px;
     border-radius: 15px;
   }
 `;
