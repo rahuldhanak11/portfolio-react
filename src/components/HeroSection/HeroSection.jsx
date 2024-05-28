@@ -38,6 +38,7 @@ const Line = styled.div`
 `;
 
 const SkillCard = styled.div`
+  flex-shrink: 0;
   width: 100px; 
   height: 100px; 
   background-color: #232229;
@@ -52,8 +53,8 @@ const SkillCard = styled.div`
   
   
   @media screen and (max-width: 768px) {
-    width: 40px;
-    height: 40px; 
+    width: 60px; 
+    height: 60px;
     margin-top: 10px;
   }
 `;
@@ -62,13 +63,17 @@ const SkillCard = styled.div`
 const SkillsContainer = styled.div`  
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   margin-top: 20px;
   padding-bottom: 20px; 
-
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: crimson transparent;
+  scrollbar-track-color: transparent;
   @media screen and (max-width: 768px) {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: crimson transparent;
   margin-left: 15px;
   margin-top: 10px;
   }
@@ -83,9 +88,10 @@ const ToolsContainer = styled.div`
   margin-top: 20px;
   padding-bottom: 20px;
   @media screen and (max-width: 768px) {
-    display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: crimson transparent; 
+  
   margin-left: 15px;
   margin-top: 10px;
   } 
@@ -93,7 +99,7 @@ const ToolsContainer = styled.div`
 const ToolCard = styled.div`
   width: 100px; 
   height: 100px; 
-  background-color: #2D2C35;
+  flex-shrink: 0;
   background-image: url(${props => props.imageUrl});
   background-size: 65%;
   background-repeat: no-repeat;
@@ -104,10 +110,18 @@ const ToolCard = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   
   @media screen and (max-width: 768px) {
-    width: 50px; 
-    height: 50px;
-    margin-top: 10px; 
+    width: 60px; 
+    height: 60px;
+    margin-top: 10px;
   }
+`;
+
+const SkillsContainerWrapper = styled.div`
+  overflow-x: auto;
+`;
+
+const ToolsContainerWrapper = styled.div`
+  overflow-x: auto;
 `;
 
 function HeroSection() {
@@ -147,7 +161,7 @@ function HeroSection() {
         <Subtitle>
           MY SKILLS
         </Subtitle>
-        <div style={{ overflowX: 'auto' }}>
+        <SkillsContainerWrapper>
           <SkillsContainer>
             <SkillCard imageUrl={skillImages.C}></SkillCard>
             <SkillCard imageUrl={skillImages.Python}></SkillCard>
@@ -158,7 +172,7 @@ function HeroSection() {
             <SkillCard imageUrl={skillImages.MySQL}></SkillCard>
             <SkillCard imageUrl={skillImages.Flutter}></SkillCard>
           </SkillsContainer>
-        </div>
+          </SkillsContainerWrapper>
         <Subtitle>
           TOOLS I HAVE WORKED ON
         </Subtitle>
