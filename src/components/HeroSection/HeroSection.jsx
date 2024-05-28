@@ -5,13 +5,17 @@ const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 50px;
+  padding: 20px;
   border-radius: 11px;
 `;
 const Title = styled.div`
   font-size: 24px;
   font-weight: 600;
   color: crimson;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const Description = styled.div`
@@ -101,7 +105,7 @@ const SkillsContainer = styled.div`
   overflow-x: auto;
   scrollbar-width: thin;
   scrollbar-color: crimson transparent;
-  margin-left: 15px;
+  margin-left: 0px;
   margin-top: 10px;
   }
 
@@ -115,6 +119,8 @@ const ToolsContainer = styled.div`
   margin-top: 20px;
   padding-bottom: 20px;
   width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: crimson transparent;
   &::-webkit-scrollbar {
     width: 4px; /* Set the width of the scrollbar */
   }
@@ -139,14 +145,11 @@ const ToolsContainer = styled.div`
   &::-webkit-scrollbar-corner {
     background: transparent; /* Remove the corner */
   }
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
   overflow-x: auto;
   scrollbar-width: thin;
   scrollbar-color: crimson transparent; 
-  &::-webkit-scrollbar {
-    width: 4px; /* Set the width of the scrollbar */
-  }
-  margin-left: 15px;
+  margin-left: 0px;
   margin-top: 10px;
   } 
 `
