@@ -13,7 +13,7 @@ import { useState } from 'react';
     border-radius: 11px;
 
     @media screen and (max-width: 960px){
-      padding: 10px;
+      padding: 10px 22px;
     }
   `;
 

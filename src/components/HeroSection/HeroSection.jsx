@@ -9,7 +9,7 @@ const HeroContainer = styled.div`
   border-radius: 11px;
 
   @media screen and (max-width: 768px){
-    padding: 10px;
+    padding: 20px 22px;
   }
 `;
 const Title = styled.div`
@@ -17,7 +17,7 @@ const Title = styled.div`
   font-weight: 600;
   color: crimson;
   @media screen and (max-width: 768px) {
-    margin: 20px 20px 0px 20px;
+    margin: 10px 0px 0px 20px;
   }
 `;
 
