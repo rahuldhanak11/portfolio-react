@@ -95,6 +95,9 @@ const SkillsContainer = styled.div`
     background: transparent; /* Remove the corner */
   }
   @media screen and (max-width: 768px) {
+    &::-webkit-scrollbar {
+    width: 4px; /* Set the width of the scrollbar */
+  }
   overflow-x: auto;
   scrollbar-width: thin;
   scrollbar-color: crimson transparent;
@@ -140,7 +143,9 @@ const ToolsContainer = styled.div`
   overflow-x: auto;
   scrollbar-width: thin;
   scrollbar-color: crimson transparent; 
-  
+  &::-webkit-scrollbar {
+    width: 4px; /* Set the width of the scrollbar */
+  }
   margin-left: 15px;
   margin-top: 10px;
   } 
