@@ -81,35 +81,32 @@ const SkillsContainer = styled.div`
   scrollbar-color: crimson transparent;
   scrollbar-track-color: transparent;
   /* Firefox */
-  scrollbar-width: thin; /* Sets the thickness of the scrollbar */
-  scrollbar-color: crimson transparent; /* Sets the color of the thumb and track */
+  scrollbar-width: thin; 
+  scrollbar-color: crimson transparent; 
 
-  /* WebKit-based browsers (Chrome, Safari, Samsung Internet) */
+  
   &::-webkit-scrollbar {
-    width: 10px; /* Sets the width of the scrollbar */
-    height: 10px; /* Sets the height of the scrollbar */
+    width: 10px; 
+    height: 10px; 
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: crimson; /* Sets the color of the thumb */
-    border-radius: 10px; /* Rounds the corners of the thumb */
+    background-color: crimson; 
+    border-radius: 10px; 
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: #a80202; /* Changes color on hover */
+    background: #a80202; 
   }
 
   &::-webkit-scrollbar-track {
-    background: transparent; /* Sets the color of the track */
+    background: transparent; 
   }
 
   &::-webkit-scrollbar-corner {
-    background: transparent; /* Removes the corner */
+    background: transparent;
   }
   @media screen and (max-width: 960px) {
-    &::-webkit-scrollbar {
-    width: 4px; /* Set the width of the scrollbar */
-  }
   overflow-x: auto;
   scrollbar-width: thin;
   scrollbar-color: crimson transparent;
@@ -127,35 +124,31 @@ const ToolsContainer = styled.div`
   padding-bottom: 20px; 
   overflow-x: auto;
   /* Firefox */
-  scrollbar-width: thin; /* Sets the thickness of the scrollbar */
-  scrollbar-color: crimson transparent; /* Sets the color of the thumb and track */
+  scrollbar-width: thin; 
+  scrollbar-color: crimson transparent; 
 
-  /* WebKit-based browsers (Chrome, Safari, Samsung Internet) */
   &::-webkit-scrollbar {
-    width: 10px; /* Sets the width of the scrollbar */
-    height: 10px; /* Sets the height of the scrollbar */
+    width: 10px; 
+    height: 10px; 
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: crimson; /* Sets the color of the thumb */
-    border-radius: 10px; /* Rounds the corners of the thumb */
+    background-color: crimson; 
+    border-radius: 10px; 
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: #a80202; /* Changes color on hover */
+    background: #a80202; 
   }
 
   &::-webkit-scrollbar-track {
-    background: transparent; /* Sets the color of the track */
+    background: transparent; 
   }
 
   &::-webkit-scrollbar-corner {
-    background: transparent; /* Removes the corner */
+    background: transparent; 
   }
   @media screen and (max-width: 960px) {
-    &::-webkit-scrollbar {
-    width: 4px; /* Set the width of the scrollbar */
-  }
   overflow-x: auto;
   scrollbar-width: thin;
   scrollbar-color: crimson transparent;
