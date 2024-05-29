@@ -7,11 +7,10 @@ import Sidebar from './components/Sidebar/Sidebar';
 import { BrowserRouter} from 'react-router-dom';
 import Container from './components/Main/Main';
 import Resume from './components/Resume/Resume';
-import Contact from './components/Contact/Contact';
 
 const HeroSection = lazy(() => import('./components/HeroSection/HeroSection'));
 const Projects = lazy(() => import('./components/Projects/Projects'));
-
+const Contact = lazy(() => import('./components/Contact/Contact'))
 
 const Body = styled.div`
 background-color: #0d0d11;
