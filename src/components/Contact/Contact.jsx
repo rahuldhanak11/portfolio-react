@@ -78,9 +78,17 @@ const Contact = () => {
     });
   };
 
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.send('service_tycxlnt', 'template_xjtsuqf', formData, 'vHWmQyGOKMEukdMKg')
+
+    const emailData = {
+      from_name: formData.from_name,
+      from_email: formData.email, 
+      message: formData.message,
+    };
+  
+    emailjs.send('service_tycxlnt', 'template_xjtsuqf', emailData, 'vHWmQyGOKMEukdMKg')
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);
       setSubmitted(true);
