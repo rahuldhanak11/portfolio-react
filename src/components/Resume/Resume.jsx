@@ -144,7 +144,7 @@ const Course = styled.div`
 
 const Resume = () => {
   const handleDownload = () => {
-    window.open('/path-to-your-resume.pdf', '_blank');
+    window.open('/Rahul_Dhanak.pdf', '_blank');
   };
 
   return (
