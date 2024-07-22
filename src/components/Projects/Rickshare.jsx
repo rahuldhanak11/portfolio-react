@@ -113,13 +113,13 @@ function Rickshare() {
           <ProjectDescription>Logo Design</ProjectDescription>
           </Project>
           <Project><Card imageUrl={projectImages.RickShareUI}></Card>
-          <ProjectName>RickShare UI Design</ProjectName>
-          <ProjectDescription>UI/UX Design</ProjectDescription>
+          <ProjectName>RickShare Application</ProjectName>
+          <ProjectDescription>UI/UX Design and Development</ProjectDescription>
           </Project>
-          <Project><Card imageUrl={projectImages.RickShareApp}></Card>
+          {/* <Project><Card imageUrl={projectImages.RickShareApp}></Card>
           <ProjectName>RickShare Application</ProjectName>
           <ProjectDescription>Flutter & Firebase</ProjectDescription>
-          </Project>
+          </Project> */}
           <Project><a href='https://rickshare.netlify.app' target='blank'><Card imageUrl={projectImages.RickShareWeb}></Card></a>
           <ProjectName>RickShare Official Website</ProjectName>
           <ProjectDescription>Web-Development</ProjectDescription>

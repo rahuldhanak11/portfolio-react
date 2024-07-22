@@ -144,7 +144,7 @@ const CustomOption = styled.option`
           
     <NavContainer>
       <NavItems>
-          <NavLink active={activePage === 'rickshare'} onClick={() => setActivePage('rickshare')}>RickShare</NavLink>
+          <NavLink active={activePage === 'rickshare'} onClick={() => setActivePage('rickshare')}>RickShare (Inactive)</NavLink>
           <NavLink active={activePage === 'web-dev'} onClick={() => setActivePage('web-dev')}>Web-Development</NavLink>
           <NavLink active={activePage === 'graphic-design'} onClick={() => setActivePage('graphic-design')}>Graphic Design</NavLink>
       </NavItems>
