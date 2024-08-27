@@ -4,6 +4,8 @@ import Rickshare from './Rickshare';
 import GraphDes from './GraphDes';
 import Prodigy from './Prodigy';
 import { useState } from 'react';
+import { MdFlutterDash } from 'react-icons/md';
+import FlutterDev from './FlutterDev';
 
   const ProjectContainer = styled.div`
     display: flex;
@@ -61,7 +63,7 @@ const NavItems = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 150px;
+  gap: 54px;
   padding: 0 6px;
   list-style: none;
   :hover {
@@ -129,6 +131,8 @@ const CustomOption = styled.option`
         return <Rickshare/>;
       case 'web-dev':
         return <Prodigy/>;
+      case 'flutter':
+        return <FlutterDev/>;
       case 'graphic-design':
         return <GraphDes/>;
      
@@ -146,6 +150,7 @@ const CustomOption = styled.option`
       <NavItems>
           <NavLink active={activePage === 'rickshare'} onClick={() => setActivePage('rickshare')}>RickShare (Inactive)</NavLink>
           <NavLink active={activePage === 'web-dev'} onClick={() => setActivePage('web-dev')}>Web-Development</NavLink>
+          <NavLink active={activePage === 'flutter'} onClick={() => setActivePage('flutter')}>Flutter Development</NavLink>
           <NavLink active={activePage === 'graphic-design'} onClick={() => setActivePage('graphic-design')}>Graphic Design</NavLink>
       </NavItems>
     </NavContainer>
@@ -153,6 +158,7 @@ const CustomOption = styled.option`
           <CustomDropdown value={activePage} onChange={handleDropdownChange}>
             <CustomOption value='rickshare'>RickShare</CustomOption>
             <CustomOption value='web-dev'>Web-Development</CustomOption>
+            <CustomOption value='flutter'>Flutter Dev</CustomOption>
             <CustomOption value='graphic-design'>Graphic Design</CustomOption>
           </CustomDropdown>
         </DropdownContainer>

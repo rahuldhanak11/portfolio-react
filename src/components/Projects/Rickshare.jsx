@@ -122,12 +122,9 @@ function Rickshare() {
           </Project> */}
           <Project><a href='https://rickshare.netlify.app' target='blank'><Card imageUrl={projectImages.RickShareWeb}></Card></a>
           <ProjectName>RickShare Official Website</ProjectName>
-          <ProjectDescription>Web-Development</ProjectDescription>
+          <ProjectDescription>Web Development</ProjectDescription>
           </Project>
           </GridContainer>
-          <DescriptionBox>
-
-          </DescriptionBox>
           </RickshareContainer>
     </div>
   )

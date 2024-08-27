@@ -144,7 +144,7 @@ const Course = styled.div`
 
 const Resume = () => {
   const handleDownload = () => {
-    window.open('/Rahul_Dhanak.pdf', '_blank');
+    window.open('/RahulDhanak.pdf', '_blank');
   };
 
   return (
@@ -203,6 +203,15 @@ const Resume = () => {
               <Year>January 2024</Year>
               
               <Course>Web Development Intern</Course>
+
+              
+            </BulletPoint>
+            <BulletPoint>
+              <College>K J Somaiya Institute of Technology (S4DS)</College>
+              
+              <Year>November 2023</Year>
+              
+              <Course>Flutter Intern</Course>
             </BulletPoint>
           </BulletPoints>
         </SectionContainer>

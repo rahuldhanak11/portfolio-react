@@ -4,7 +4,7 @@ export const Bio = {
     "Web-Developer",
     "UI/UX Designer",
     "Graphic Designer",
-    "Professional Yapper",
+    "Flutter Enthusiast",
   ],
   description:
     "I specialize in creating modern, responsive, and user-friendly websites. Whether you're looking to establish your online presence, enhance user experience, or showcase your projects, I'm here to help.",

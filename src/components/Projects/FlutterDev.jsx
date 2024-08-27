@@ -57,27 +57,22 @@ margin-top: 5px;
 
 `;
 
-function Prodigy() {
+function FlutterDev() {
     const projectImages = {
-        Portfolio: '/portfolio-01.png',
-        Manasatarang:'/manasatarang-01.png',
-        RickShare:'rickshareweb1-01.png'
+        GreenCommute: '/greencommute.jpeg',
+        RickShare:'/rickshareui-01.png'
       }
   return (
     <div id='web-dev'>
         <RickshareContainer>
           <GridContainer>
-            <Project><Card imageUrl={projectImages.Portfolio}></Card>
-            <ProjectName>Portfolio Website</ProjectName>
-          <ProjectDescription>Developer Portfolio</ProjectDescription>
+            <Project><a href='https://github.com/rahuldhanak11/green-commute' target='_blank'><Card imageUrl={projectImages.GreenCommute}></Card></a>
+            <ProjectName>Green Commute</ProjectName>
+          <ProjectDescription>Save Carbon Footprint</ProjectDescription>
           </Project>
-          <Project><a href='https://rickshare.netlify.app' target='_blank'><Card imageUrl={projectImages.RickShare}></Card></a>
-          <ProjectName>RickShare Official Website</ProjectName>
-          <ProjectDescription>Public Startup Website</ProjectDescription>
-          </Project>
-          <Project><a href='https://github.com/Devansh-Aage/Webathon-Hackathon' target='_blank'><Card imageUrl={projectImages.Manasatarang}></Card></a>
-          <ProjectName>ManaSatarang</ProjectName>
-          <ProjectDescription>Mental Health Platform</ProjectDescription>
+          <Project><Card imageUrl={projectImages.RickShare}></Card>
+          <ProjectName>RickShare Application</ProjectName>
+          <ProjectDescription>Startup dedicated to College Students</ProjectDescription>
           </Project>
           </GridContainer>
           </RickshareContainer>
@@ -85,4 +80,4 @@ function Prodigy() {
   )
 }
 
-export default Prodigy;
+export default FlutterDev;
