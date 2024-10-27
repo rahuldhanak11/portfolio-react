@@ -40,7 +40,7 @@ const Card = styled.div`
   margin: 30px;  
   cursor: pointer;
   transition: background-color 0.3s ease;
-  &.hover:{
+  &.hover{
     filter: invert(0.30);
   }
 `;
@@ -73,12 +73,27 @@ function GraphDes() {
     const projectImages = {
         CCR: '/CCR.png',
         TTT: '/TTT.jpg',
-        Tgrid:'tenuregrid-01.png'
+        Tgrid:'tenuregrid-01.png',
+        RLogo: '/ricksharelogo-01.png',
+        GreenCommute: '/greencommute.jpeg',
+        Nexus: '/nexusLogo.jpeg'
       }
   return (
     <div id='rickshare'>
         <RickshareContainer>
           <GridContainer>
+          <Project><Card imageUrl={projectImages.Nexus}></Card>
+            <ProjectName>Knowhow Nexus</ProjectName>
+          <ProjectDescription>Logo Design</ProjectDescription>
+          </Project>
+          <Project><Card imageUrl={projectImages.GreenCommute}></Card>
+            <ProjectName>Green Commute</ProjectName>
+          <ProjectDescription>Logo Design</ProjectDescription>
+          </Project>
+          <Project><Card imageUrl={projectImages.RLogo}></Card>
+            <ProjectName>RickShare</ProjectName>
+          <ProjectDescription>Logo Design</ProjectDescription>
+          </Project>
             <Project><Card imageUrl={projectImages.CCR}></Card>
             <ProjectName>CSI Instagram Post</ProjectName>
           <ProjectDescription>Social Media Post</ProjectDescription>

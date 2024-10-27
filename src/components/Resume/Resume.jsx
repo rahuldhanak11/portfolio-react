@@ -213,6 +213,13 @@ const Resume = () => {
               
               <Course>Flutter Intern</Course>
             </BulletPoint>
+            <BulletPoint>
+              <College>K J Somaiya Institute of Technology (S4DS)</College>
+              
+              <Year>October 2023</Year>
+              
+              <Course>CSI- Digital & Cinematography Team Member</Course>
+            </BulletPoint>
           </BulletPoints>
         </SectionContainer>
       </ResumeLeft>

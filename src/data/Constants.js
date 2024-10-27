@@ -1,9 +1,9 @@
 export const Bio = {
   name: "Rahul Dhanak",
   roles: [
-    "Web-Developer",
-    "UI/UX Designer",
     "Graphic Designer",
+    "UI/UX Designer",
+    "Web-Developer",
     "Flutter Enthusiast",
   ],
   description:

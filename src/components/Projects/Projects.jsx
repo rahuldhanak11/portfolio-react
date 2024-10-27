@@ -127,8 +127,8 @@ const CustomOption = styled.option`
 
   const renderPage = () => {
     switch (activePage) {
-      case 'rickshare':
-        return <Rickshare/>;
+      // case 'rickshare':
+      //   return <Rickshare/>;
       case 'web-dev':
         return <Prodigy/>;
       case 'flutter':
@@ -148,7 +148,7 @@ const CustomOption = styled.option`
           
     <NavContainer>
       <NavItems>
-          <NavLink active={activePage === 'rickshare'} onClick={() => setActivePage('rickshare')}>RickShare (Inactive)</NavLink>
+          {/* <NavLink active={activePage === 'rickshare'} onClick={() => setActivePage('rickshare')}>RickShare (Inactive)</NavLink>   */}
           <NavLink active={activePage === 'web-dev'} onClick={() => setActivePage('web-dev')}>Web-Development</NavLink>
           <NavLink active={activePage === 'flutter'} onClick={() => setActivePage('flutter')}>Flutter Development</NavLink>
           <NavLink active={activePage === 'graphic-design'} onClick={() => setActivePage('graphic-design')}>Graphic Design</NavLink>
@@ -156,7 +156,7 @@ const CustomOption = styled.option`
     </NavContainer>
     <DropdownContainer>
           <CustomDropdown value={activePage} onChange={handleDropdownChange}>
-            <CustomOption value='rickshare'>RickShare</CustomOption>
+            {/* <CustomOption value='rickshare'>RickShare</CustomOption> */}
             <CustomOption value='web-dev'>Web-Development</CustomOption>
             <CustomOption value='flutter'>Flutter Dev</CustomOption>
             <CustomOption value='graphic-design'>Graphic Design</CustomOption>

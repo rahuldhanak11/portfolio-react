@@ -209,7 +209,7 @@ function HeroSection() {
         </Title>
         <Line/>
         <Description>
-        I'm Rahul, a versatile and passionate designer and developer with a specialization in graphic design, UI/UX, web development, and Flutter app development. With a keen eye for detail and a commitment to excellence, I create visually stunning and user-friendly designs that not only look great but also provide an intuitive and engaging experience.
+        I'm Rahul, a versatile and passionate designer and developer with a specialization in Graphic Design, UI/UX, Web Development, and Flutter Development. With a keen eye for detail and a commitment to excellence, I create visually stunning designs and user-friendly interfaces that not only look great but also provide an intuitive and engaging experience.
         <br />
         <br />
         Whether you're looking to enhance your digital presence or bring a new idea to life, I'm here to help you achieve your goals with creativity and technical proficiency. Let's work together to make your vision a reality!
