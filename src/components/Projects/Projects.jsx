@@ -56,6 +56,10 @@ const NavContainer = styled.div`
   padding: 0 24px;
   max-width: 1200px;
   z-index: 1;
+
+  @media (max-width: 768px) {
+  display: none;  
+  }
 `;
 
 const NavItems = styled.ul`
